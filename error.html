@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Unavailable</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #333;
+      }
+      .container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 80%;
+      }
+      h1 {
+        color: #e74c3c;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .emoji {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+      .progress-bar {
+        background-color: #ecf0f1;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+      .progress {
+        background-color: #3498db;
+        height: 100%;
+        width: 0;
+        transition: width 0.5s ease-in-out;
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      @media (max-width: 480px) {
+        .container {
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="emoji" role="img" aria-label="Construction emoji">🚧</div>
+      <h1>Project Unavailable</h1>
+      <p>
+        We're sorry, but this project is currently unavailable. Our developers
+        are working hard to bring it to life!
+      </p>
+      <p>Check back soon for updates on our progress.</p>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <button id="checkProgress">Check Progress</button>
+    </div>
+
+    <script>
+      const progressBar = document.getElementById("progress");
+      const checkProgressBtn = document.getElementById("checkProgress");
+      let progress = 0;
+
+      checkProgressBtn.addEventListener("click", () => {
+        if (progress < 100) {
+          progress += Math.floor(Math.random() * 20) + 5;
+          progress = Math.min(progress, 100);
+          progressBar.style.width = `${progress}%`;
+
+          if (progress === 100) {
+            checkProgressBtn.textContent = "Development Complete!";
+            checkProgressBtn.disabled = true;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

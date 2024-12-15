@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldrin A Cataquiz Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+   
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "bN2REbuA2TEuMOm1l",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ALDRIKNOWS</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>ALDRIN CATAQUIZ</h1>
+          <h2>Westmead International School</h2>
+          <a href="#contact" class="cta-button">Contact me</a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="me.png" alt="JAldriknows" class="profile-image" />
+          <p>
+            Hello! My name is Aldrin Cataquiz. I am a 4th-year student pursuing
+            a Bachelor of Science in Information Technology at Westmead
+            International School in the vibrant city of Batangas. In my free
+            time, I immerse myself in the exciting world of online gaming, where
+            I enjoy connecting with friends and exploring vast virtual
+            landscapes. I also have a passion for dancing, which allows me to
+            express myself creatively, and I love to draw, capturing my
+            imagination on paper. One of my favorite pastimes is sleeping;
+            there’s something truly comforting about drifting off into a
+            peaceful slumber that I absolutely cherish.
+
+            
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="AR.jpeg" alt="Project 1" />
+            <h3>AR Game</h3>
+            <p>
+              The Augmented Reality Scavenger Hunt is an immersive game built
+              using Unity and powered by Vuforia, combining AR technology with
+              interactive gameplay. Players explore real-world environments,
+              solving clues and discovering virtual objects seamlessly
+              integrated into their surroundings. This innovative experience
+              blends physical and digital elements to create engaging and
+              dynamic adventures.
+            </p>
+            <a href="error.html" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="calculator.png" alt="Project 2" />
+            <h3>Calculator</h3>
+            <p>
+              Calculator is a versatile tool designed to streamline planning and
+              budgeting for projects of any scale. It enables users to estimate
+              costs, allocate resources efficiently, and track progress in
+              real-time. With an intuitive interface and customizable features,
+              the calculator simplifies complex calculations, helping users save
+              time, reduce errors, and ensure project success.
+            </p>
+            <a href="calculator.html" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="memory.png" alt="Project 3" />
+            <h3>Memory Game</h3>
+            <p>
+              Memory Match Game is a fun and engaging puzzle experience designed
+              to sharpen focus and improve recall skills. Built with Unity, it
+              challenges players to match pairs of cards by memorizing their
+              positions. With customizable themes and levels of difficulty, the
+              game offers entertainment for all ages while promoting cognitive
+              development.
+            </p>
+            <a href="game.html" class="project-link">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 Aldrin A Cataquiz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
